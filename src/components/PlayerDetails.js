@@ -1,8 +1,15 @@
 import React from 'react'
 
-function PlayerDetails() {
+function PlayerDetails({song}) {
   return (
-    <div>PlayerDetails</div>
+    <div className='c-player-details'>
+      <div className='details-img'>
+        <img src={song.cover} />
+      </div>
+      <h3 className='details-title' >{song.title}</h3>
+      <h4 className='details-artist'>{song.artist}</h4>
+    </div>
+
   )
 }
 
