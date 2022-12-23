@@ -2,7 +2,7 @@ import React from 'react'
 
 function PlayerDetails({song}) {
   return (
-    <div className='c-player-details'>
+    <div className='c-player--details'>
       <div className='details-img'>
         <img alt='cover' src={song.cover} />
       </div>
