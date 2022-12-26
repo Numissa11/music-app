@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import chillHop from './data';
+import chillHop from './resources/data';
 import Player from '../src/components/Player'
 
 function App() {

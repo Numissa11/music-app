@@ -56,7 +56,15 @@ const chillHop = () => {
       id: uuidv4(),
       active: false,
     },
-    //ADD MORE HERE
+    {
+      name: "Hire ME",
+      cover: "https://www.linkpicture.com/q/telechargement_13.png",
+      artist: "Aline Sinclaire",
+      audio: "https://files.fm/f/3phpqfaur",
+      color: ["#205950", "#2ab3bf"],
+      id: uuidv4(),
+      active: false,
+    },
   ];
 };
 
