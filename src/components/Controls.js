@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faForward, faBackward } from '@fortawesome/free-solid-svg-icons'
 
-function PlayerControls({ isPlaying, setIsPlaying, SkipSong }) {
+function Controls({ isPlaying, setIsPlaying, SkipSong }) {
     return (
         <div className="c-player--controls">
             <button className="skip-btn" >
@@ -18,4 +18,4 @@ function PlayerControls({ isPlaying, setIsPlaying, SkipSong }) {
     )
 }
 
-export default PlayerControls
+export default Controls

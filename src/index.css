@@ -26,7 +26,7 @@ body {
     box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
 }
 
-.c-player > h4 {
+.c-player>h4 {
     color: #FFF;
     font-size: 14px;
     text-transform: uppercase;
@@ -34,14 +34,14 @@ body {
     text-align: center;
 }
 
-.c-player > p {
+.c-player>p {
     color: #AAA;
     font-size: 14px;
     text-align: center;
     font-weight: 600;
 }
 
-.c-player > p span {
+.c-player>p span {
     font-weight: 400;
 }
 
@@ -75,7 +75,7 @@ body {
 .c-player--details .details-title {
     color: #EEE;
     font-size: 28px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(255, 255, 255, 0.4);
     text-align: center;
     margin-bottom: 10px;
 }
@@ -83,7 +83,7 @@ body {
 .c-player--details .details-artist {
     color: #AAA;
     font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), -2px -2px 4px rgba(255, 255, 255, 0.4);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -105,16 +105,17 @@ body {
     outline: none;
     background-color: #FFCE00;
     color: #FFF;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
 }
 
 .c-player--controls .play-btn:hover {
-    background-color: #f69206;
+    background-color: #fcdb57;
 }
 
 .c-player--controls .skip-btn:hover {
-    color: #f69206;;
+    color: #fcdb57;
+    ;
 }
 
 .c-player--controls .skip-btn {
@@ -126,13 +127,12 @@ body {
     font-size: 25px;
 }
 
-.navigation{
+.navigation {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.navigation_wrapper
-{
+.navigation_wrapper {
     min-width: 100%;
     background-color: rgba(119, 119, 119, 0.781);
     height: 5px;
@@ -146,6 +146,25 @@ body {
     border-radius: 30px;
 }
 
+.menu-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+.menu img {
+    width: 130px;
+    padding: 10px;
+}
+
+.separator {
+    height: 50em;
+    width: 5px;
+    background-color: rgb(163, 163, 163);
+    margin-left: auto;
+}
+
 @media only screen and (max-width: 650px) {
     .c-player--controls .skip-btn {
         background: none;
@@ -155,5 +174,5 @@ body {
         color: rgb(196, 128, 38);
         font-size: 30px;
     }
-    
+
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PlayerDetails({ song }) {
+function Details({ song }) {
 
   return (
     <div className='c-player--details'>
@@ -14,4 +14,4 @@ function PlayerDetails({ song }) {
   )
 }
 
-export default PlayerDetails
+export default Details

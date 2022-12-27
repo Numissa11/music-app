@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-function PlayerBar({ audioEl, currentSong }) {
+function Bar({ audioEl, currentSong }) {
 
     const clickRef = useRef();
 
@@ -8,10 +8,7 @@ function PlayerBar({ audioEl, currentSong }) {
         let width = clickRef.current.clientWidth;
         const offset = e.nativeEvent.offsetX;
 
-        console.log(audioEl.current.currentTime)
-        console.log('my curent song', currentSong)
         const divprogress = offset / width * 100;
-        console.log('div',divprogress, 'current' , currentSong.length)
         audioEl.current.currentTime = divprogress / 100 * currentSong.length;
     }
 
@@ -27,4 +24,4 @@ function PlayerBar({ audioEl, currentSong }) {
     )
 }
 
-export default PlayerBar
+export default Bar

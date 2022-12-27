@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import chillHop from './resources/data';
 import Player from '../src/components/Player'
+import Menu from './components/Menu';
 
 function App() {
 
@@ -19,15 +20,18 @@ function App() {
     });
   }, [currentSongIndex]);
 
-    
-
-
   return (
     <div className="App">
-      <Player 
-        currentSongIndex={currentSongIndex} 
-        setCurrentSongIndex={setCurrentSongIndex} 
-        nextSongIndex={nextSongIndex} 
+      <Menu 
+      currentSongIndex={currentSongIndex}
+      songs={songs}
+      setCurrentSongIndex={setCurrentSongIndex}
+      />
+      <div className='separator'></div>
+      <Player
+        currentSongIndex={currentSongIndex}
+        setCurrentSongIndex={setCurrentSongIndex}
+        nextSongIndex={nextSongIndex}
         songs={songs}
       />
     </div>
