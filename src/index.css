@@ -153,9 +153,21 @@ body {
     margin-top: 10%;
 }
 
+.menu-title {
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.menu{
+    position: relative;
+    color: white;
+}
+
 .menu img {
     width: 130px;
-    padding: 10px;
+    padding-bottom: 25%;
 }
 
 .separator {

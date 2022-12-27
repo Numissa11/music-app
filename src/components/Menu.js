@@ -7,13 +7,15 @@ function Menu({ songs, setCurrentSongIndex }) {
     };
 
     return (
-        <div className='menu'>
+        <div >
             <div className='menu-img'>
                 {songs.map((song,i) => {
-                    return <img
+                    return <div key={song.id} className='menu'> 
+                        <img
                         src={song.cover}
-                        key={song.id}
                         onClick={e => onChangeSong(e, i)} />
+                        <div className='menu-title'>{song.name}</div>
+                        </div>
                 })}
             </div>
         </div>
