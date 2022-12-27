@@ -160,13 +160,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.menu{
+.menu {
     position: relative;
     color: white;
 }
 
 .menu img {
-    width: 130px;
+    width: 120px;
     padding-bottom: 25%;
 }
 
@@ -177,7 +177,13 @@ body {
     margin-left: auto;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .c-player--controls .skip-btn {
         background: none;
         border: none;
@@ -187,4 +193,15 @@ body {
         font-size: 30px;
     }
 
+    .menu {
+        margin-left: 0%;
+    }
+
+    .menu-img img {
+        width: 100px;
+    }
+
+    .separator {
+        display: none;
+    }
 }
